@@ -1,0 +1,11 @@
+### Upload logo.png to S3
+POST http://localhost:8080/s3/upload
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="logo.png"
+Content-Type: image/png
+
+#아래 경로를 바꿔줘야 됨
+< \Users\gram\Desktop\todoapp\image\logo.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW--

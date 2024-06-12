@@ -13,3 +13,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
+  cloud:
+    aws:
+      region:
+        static: ap-northeast-2 # Seoul region 설정 해주기
+  config:
+    import:
+      - aws-parameterstore:/todo/config/
